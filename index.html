@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MarShop</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">MarShop</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#help">Ayuda</a></li>
+                <li><a id="show-login" href="#">Login</a></li>
+                <li><a id="show-signup" href="#">Sign Up</a></li>
+                <li>
+                    <input type="text" id="product-search" placeholder="Buscar productos...">
+                    <button id="search-btn">Buscar</button>
+                </li>
+                <li>
+                    <a id="cart" href="#">
+                        Carrito <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="welcome-section">
+            <h1>Bienvenido a MarShop</h1>
+            <p>Explora nuestra última colección de ropa y accesorios. Encuentra lo que necesitas para tu estilo único.</p>
+        </section>
+
+        <section class="card-section">
+            <div class="card login-card" id="login-card">
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <input type="email" id="emailL" placeholder="Correo electrónico" required>
+                    <input type="password" id="passL" placeholder="Contraseña" required>
+                    <button type="button" id="buttonL">Iniciar Sesión</button>
+                </form>
+            </div>
+            <div class="card signup-card" id="signup-card">
+                <h2>Crear Cuenta</h2>
+                <form>
+                    <input type="email" id="emailR" placeholder="Correo electrónico" required>
+                    <input type="password" id="passR" placeholder="Contraseña" required>
+                    <button type="button" id="buttonR">Crear Cuenta</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="product-grid" id="product-grid">
+                <div class="product-item" data-name="Vestido Rojo">
+                    <img src="img_mar/vestido_rojo.jpeg">
+                    <p>Vestido Rojo</p>
+                    <p class="price">$800.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Camisa Blanca">
+                    <img src="img_mar/cami_blan.jpeg">
+                    <p>Camisa Blanca</p>
+                    <p class="price">$250.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Pantalón Azul">
+                    <img src="img_mar/pan_azul.jpeg">
+                    <p>Pantalón Azul</p>
+                    <p class="price">300.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Zapatos Deportivos">
+                    <img src="img_mar/zap_dep.jpeg">
+                    <p>Zapatos Deportivos</p>
+                    <p class="price">599.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Gorra Negra">
+                    <img src="img_mar/gorra_negra.jpeg">
+                    <p>Gorra Negra</p>
+                    <p class="price">$149.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Chaqueta de Cuero">
+                    <img src="img_mar/cha_cue.jpeg">
+                    <p>Chaqueta de Cuero</p>
+                    <p class="price">$1299.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Bufanda de Lana">
+                    <img src="img_mar/buf_lan.jpeg">
+                    <p>Bufanda de Lana</p>
+                    <p class="price">$149.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Guantes de Cuero">
+                    <img src="img_mar/guan.jpeg">
+                    <p>Guantes de Cuero</p>
+                    <p class="price">$199.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Pantalones Cortos">
+                    <img src="img_mar/pan_cort.jpeg">
+                    <p>Pantalones Cortos</p>
+                    <p class="price">$349.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="Camiseta de Manga Larga">
+                    <img src="img_mar/camisa.jpeg">
+                    <p>Camiseta de Manga Larga</p>
+                    <p class="price">$149.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="top">
+                    <img src="img_mar/top.jpeg">
+                    <p>top deportivo</p>
+                    <p class="price">$149.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product-item" data-name="falda">
+                    <img src="img_mar/falda.jpeg">
+                    <p>falda </p>
+                    <p class="price">$249.99</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; 2024 MarShop. Todos los derechos reservados.
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

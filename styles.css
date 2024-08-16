@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #706868a8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #6a0dad; /* Morado Lila */
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #5e0d91; /* Morado Lila más oscuro */
+}
+
+#product-search {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+#search-btn {
+    background-color: #fff;
+    color: #6a0dad;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #e0d6f1; /* Morado Lila más claro */
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 6rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 6rem auto 2rem auto;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Card Section */
+.card-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    display: none;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+}
+
+.card form input,
+.card form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.card form button {
+    background-color: #6a0dad; /* Morado Lila */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card form button:hover {
+    background-color: #5e0d91; /* Morado Lila más oscuro */
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart {
+    background-color: #6a0dad; /* Morado Lila */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #5e0d91; /* Morado Lila más oscuro */
+}
+
+/* Footer */
+.footer {
+    background-color: #6a0dad; /* Morado Lila */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
